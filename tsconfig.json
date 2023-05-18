@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "removeComments": true,
+    "jsx": "preserve",
+    "forceConsistentCasingInFileNames": true,
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "strictBindCallApply": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": ["vite/client", "node"],
+    "paths": {
+      "@*": ["../../packages/*/src"],
+      "~*": ["../../packages/*"]
+    },
+  },
+  "include": [
+    "packages/**/src/*.d.ts",
+    "packages/**/src/*.ts",
+    "packages/**/src/*.tsx",
+    "packages/**/src/*.js",
+    "packages/**/src/*.jsx",
+    "packages/**/src/*.vue",
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

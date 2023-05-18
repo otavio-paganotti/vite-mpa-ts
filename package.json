@@ -1,0 +1,44 @@
+{
+  "name": "mpa-poc",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/cli.mjs --build all",
+    "build:all": "vite build",
+    "preview": "vite preview",
+    "prettier": "prettier --write .",
+    "eslint": "eslint --ext .ts,vue --ignore-path .gitignore ."
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.1",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "@typescript-eslint/parser": "^5.59.6",
+    "cac": "^6.7.14",
+    "chalk": "^5.2.0",
+    "connect-history-api-fallback": "^2.0.0",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-vue": "^9.13.0",
+    "execa": "^7.1.1",
+    "ora": "^6.3.1",
+    "prettier": "^2.8.8",
+    "prompts": "^2.4.2",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react-swc": "^3.3.1",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vite-plugin-multiple-page": "^0.4.3",
+    "vue": "^3.3.4"
+  }
+}
